@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html class="m-0" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./output.css">
+
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <script type="module" src="./js/script.js"></script>
+
+</head>
+
+<body class="relative border">
+
+  <header
+    class="w-11/12 mx-auto flex justify-between items-center lg:border-b lg:border-GrayishBlueNeutral lg:pb-7 pt-5">
+    <div class="flex gap-2 items-center">
+      <!-- navegacion mobil -->
+
+      <img class="menu-mobil cursor-pointer w-5 lg:hidden" src="../images/icon-menu.svg" alt="">
+      <img src="../images/logo.svg" alt="logo ">
+      <!-- nav desktop -->
+      <nav class="lg:ml-10">
+        <ul class="hidden lg:flex lg:gap-5">
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+
+    <div class="flex gap-5 items-center relative">
+
+      <div
+        class="quantity hidden rounded-full absolute top-[6px] right-[60px] bg-OrangePrimary w-5 h-4 text-white flex items-center justify-center">
+        0
+      </div>
+      <img class="cursor-pointer btn-cart w-5" src="../images/icon-cart.svg" alt="icon-cart">
+      <img class="hover:border-2 cursor-pointer rounded-full hover:border-OrangePrimary  w-[50px]"
+        src="../images/image-avatar.png" alt="image-avatar">
+
+      <section
+        class="empty-cart hidden purchase-results hidden bg-white w-[330px] z-50 shadow-[0px_20px_20px_10px_#00000024] rounded-xl absolute top-[62px] right-0 ">
+        <h2 class=" p-5">Cart</h2>
+
+        <div class=" border border-t-GrayishBlueNeutral"></div>
+
+        <div class="flex justify-center items-center p-5">
+          <p>cart empty</p>
+        </div>
+      </section>
+
+      <section
+        class="full-cart hidden purchase-results hidden bg-white w-[330px] z-50 shadow-[0px_20px_20px_10px_#00000024] rounded-xl absolute top-[62px] right-0 ">
+
+        <h2 class="p-5">Cart</h2>
+
+        <div class="border border-t-GrayishBlueNeutral"></div>
+        <div class="flex items-center justify-between p-5 ">
+          <img class="rounded-lg size-[50px]" src="../images/image-product-2.jpg" alt="">
+
+          <div class="">
+            <p>Fall Limited Edition Sneakers</p>
+            <div class="flex gap-2">
+              <p>$125.00 x <span class="amount-of-pieces">$</span></p>
+              <p class="total-price">$000</p>
+            </div>
+          </div>
+          <button class="delete-cart">
+            <img class="w-[14px] h-[16px]" src="../images/icon-delete.svg" alt="delete">
+          </button>
+
+      </section>
+    </div>
+
+  </header>
+
+  <article class="my-5 lg:flex lg:justify-center lg:items-center lg:w-[85%] lg:mx-auto lg:gap-10 lg:my-20">
+    <figure>
+      <img class="desktop--test--image hidden cursor-pointer lg:rounded-[15px] lg:block lg:w-[445px]"
+        src="../images/image-product-1.jpg" alt="Image 1">
+
+      <!-- slide mobil -->
+      <div class="slider lg:w-[445px] lg:rounded-[15px] lg:hidden relative">
+        <div class="slide-inner">
+          <img class="silide-img" src="../images/image-product-1.jpg" alt="Image 1">
+          <img class="silide-img" src="../images/image-product-2.jpg" alt="Image 2">
+          <img class="silide-img" src="../images/image-product-3.jpg" alt="Image 3">
+          <img class="silide-img" src="../images/image-product-4.jpg" alt="Image 3">
+        </div>
+        <button
+          class="prev size-10 bg-white rounded-full flex justify-center items-center absolute top-[50%] left-2"><img
+            src="../images/icon-previous.svg" alt=""></button>
+        <button
+          class="next size-10 bg-white rounded-full flex justify-center items-center absolute top-[50%] right-2"><img
+            src="../images/icon-next.svg" alt=""></button>
+      </div> <!--final slide mobil-->
+
+      <div class="desktop--image--container hidden lg:flex lg:mt-5 lg:w-[445px] justify-between">
+
+        <img
+          class="img-preview cursor-pointer w-[88px] rounded-[8px] lg:hover:opacity-50 lg:hover:border-4 lg:border-OrangePrimary"
+          src="../images/image-product-1.jpg" alt="">
+        <img
+          class="img-preview cursor-pointer w-[88px] rounded-[8px] lg:hover:opacity-50 lg:hover:border-4 lg:border-OrangePrimary"
+          src="../images/image-product-2.jpg" alt="">
+        <img
+          class="img-preview cursor-pointer w-[88px] rounded-[8px] lg:hover:opacity-50 lg:hover:border-4 lg:border-OrangePrimary"
+          src="../images/image-product-3.jpg" alt="">
+        <img
+          class="img-preview cursor-pointer w-[88px] rounded-[8px] lg:hover:opacity-50 lg:hover:border-4 lg:border-OrangePrimary"
+          src="../images/image-product-4.jpg" alt="">
+      </div>
+    </figure>
+
+    <div class="lg:w-1/2">
+
+      <div class="w-11/12 mx-auto mt-5">
+        <p class="text-OrangePrimary">Sneaker Company</p>
+        <h1 class="font-bold text-3xl mt-2 lg:text-5xl">Fall Limited Edition Sneakers</h1>
+        <p class="mt-5 leading-6 text-base">These low-profile sneakers are your perfect casual wear companion. Featuring
+          a
+          durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+      </div>
+
+      <div class="w-11/12 mx-auto flex justify-between items-center mt-5 lg:flex-col lg:items-start lg:gap-5">
+
+        <div class="flex items-center gap-5">
+          <p class="font-bold text-3xl">$125.00</p>
+          <p class="bg-PaleOrangePrimary text-OrangePrimary font-bold w-12 text-center p-1 rounded-lg">50%</p>
+        </div>
+        <p class="text-GrayishBlueNeutral font-bold"><del>$250.00</del></p>
+      </div>
+
+      <div class="lg:flex lg:mx-auto lg:items-center lg:justify-between lg:w-[91%]">
+
+        <div
+          class="parts-container w-11/12 mx-auto flex justify-between items-center bg-LightGrayishBlue  py-5 px-5 rounded-xl mt-5 lg:w-[30%] lg:mx-0 lg:py-5">
+          <button class="btn-minus"><img class="btnParts w-4 minus cursor-pointer" src="../images/icon-minus.svg"
+              alt=""></button>
+          <div class="amount font-bold">0</div>
+          <button class="btn-plus"><img class="btnParts plus w-4 cursor-pointer" src="../images/icon-plus.svg"
+              alt=""></button>
+        </div>
+
+        <div class="lg:w-[70%] lg:flex lg:justify-end items-center">
+          <button
+            class="btn-add-cart w-11/12 mx-auto bg-OrangePrimary text-white font-bold py-5 px-3 rounded-lg flex items-center justify-center gap-3 mt-5 lg:mx-0">
+            <img src="../images/icon-cart.svg" alt="">
+            Add to Cart
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </article>
+
+  <!-- ////////////////////////////////////////////7 -->
+
+  <nav class="nav-mobil hidden z-50 bg-white w-[250px] h-full p-5 absolute top-0 lg:hidden">
+    <img class="btn-close-Mobil btn-close cursor-pointer" src="../images/icon-close.svg" alt="close">
+    <ul class="mt-10 flex flex-col gap-5">
+      <li><a class="text-lg font-bold" href="#">Collections</a></li>
+      <li><a class="text-lg font-bold" href="#">Men</a></li>
+      <li><a class="text-lg font-bold" href="#">Women</a></li>
+      <li><a class="text-lg font-bold" href="#">About</a></li>
+      <li><a class="text-lg font-bold" href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="overlay hidden absolute size-full top-0 left-0 bg-overlay"></div>
+
+  <!-- slide mobil -->
+  <div class="hidden slide--desktop lg:absolute lg:top-[25%] lg:right-[34%]">
+    <button class=" absolute top-[-20px] right-0">
+      <svg class="btn-close-Desktop cursor-pointer fill-white hover:fill-OrangePrimary" width="14" height="15"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" />
+      </svg>
+    </button>
+    <div class="slider lg:w-[445px] lg:rounded-[15px] relative">
+      <div class="slide-inner">
+        <img class="silide-img" src="../images/image-product-1.jpg" alt="Image 1">
+        <img class="silide-img" src="../images/image-product-2.jpg" alt="Image 2">
+        <img class="silide-img" src="../images/image-product-3.jpg" alt="Image 3">
+        <img class="silide-img" src="../images/image-product-4.jpg" alt="Image 3">
+      </div>
+      <button class="prev size-10 bg-white rounded-full flex justify-center items-center absolute top-[50%] left-2"><img
+          src="../images/icon-previous.svg" alt=""></button>
+      <button
+        class="next size-10 bg-white rounded-full flex justify-center items-center absolute top-[50%] right-2"><img
+          src="../images/icon-next.svg" alt=""></button>
+    </div>
+  </div>
+  <!--final slide mobil -->
+
+</body>
+
+</html>

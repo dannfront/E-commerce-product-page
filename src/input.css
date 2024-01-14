@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer{
+
+    .slider {
+        overflow: hidden;
+    }
+    
+    .slide-inner{
+        display: flex;
+        transition: transform 0.3s ease-in-out; /* Agrega una transición de 0.3 segundos con efecto ease-in-out */
+    }
+
+    .img-clicked{
+        @apply  border-4 border-OrangePrimary
+    }
+}
